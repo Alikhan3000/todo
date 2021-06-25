@@ -5,7 +5,7 @@ from django.shortcuts import render, HttpResponse
 #     return render(request, "index.html")
 
 def test(request):
-    return render(request, "index.html"))
+    return render(request, "index.html")
 
 # def second(request): 
 #     return HttpResponse("test 2 page") 
