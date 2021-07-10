@@ -6,11 +6,11 @@ def homepage(request):
     return render(request, "index.html")
 
 def test(request):
-    todo_list = ToDo.objects.all()
-    return render(request, "index.html", {"todo_list": todo_list})
+    return render(request, "index.html")
 
 # def second(request): 
 #     return HttpResponse("test 2 page") 
 
-# def test(request):
-#     return render(request, "test.html")
+def test(request):
+    todo_list = ToDo.objects.all()
+    return render(request, "test.html", {"todo_list": todo_list})
