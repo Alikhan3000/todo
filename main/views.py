@@ -35,3 +35,9 @@ def mark_todo(request, id):
     todo.save()
     return redirect(test)
         
+def unmark_todo(request,id):
+    todo = ToDo.objects.get(id=id)
+    todo.is_favourite = False
+    todo.save()
+    return redirect(test)
+    
